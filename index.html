@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="keys">
+      <div class="piano">
+        <div data-key="81" class="key">
+          <kbd>Q</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="87" class="key">
+          <kbd>W</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="69" class="key">
+          <kbd>E</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="82" class="key">
+          <kbd>R</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="84" class="key">
+          <kbd>T</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="89" class="key">
+          <kbd>Y</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="85" class="key">
+          <kbd>U</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="73" class="key">
+          <kbd>I</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="79" class="key">
+          <kbd>O</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="80" class="key">
+          <kbd>P</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="65" class="key">
+          <kbd>A</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="83" class="key">
+          <kbd>S</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="68" class="key">
+          <kbd>D</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="70" class="key">
+          <kbd>F</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="71" class="key">
+          <kbd>G</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="72" class="key">
+          <kbd>H</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="74" class="key">
+          <kbd>J</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="75" class="key">
+          <kbd>K</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="76" class="key">
+          <kbd>L</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="90" class="key" style="margin-left: 100px">
+          <kbd>Z</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="88" class="key">
+          <kbd>X</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="67" class="key">
+          <kbd>C</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="86" class="key">
+          <kbd>V</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="66" class="key">
+          <kbd>B</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="78" class="key">
+          <kbd>N</kbd>
+          <span class="sound"></span>
+        </div>
+        <div data-key="77" class="key">
+          <kbd>M</kbd>
+          <span class="sound"></span>
+        </div>
+      </div>
+      <div class="drum">
+        <div data-key="103" class="key">
+          <kbd>7</kbd>
+          <span class="sound">clap</span>
+        </div>
+        <div data-key="104" class="key">
+          <kbd>8</kbd>
+          <span class="sound">hihat</span>
+        </div>
+        <div data-key="105" class="key">
+          <kbd>9</kbd>
+          <span class="sound">kick</span>
+        </div>
+        <div data-key="100" class="key">
+          <kbd>4</kbd>
+          <span class="sound">openhat</span>
+        </div>
+        <div data-key="101" class="key">
+          <kbd>5</kbd>
+          <span class="sound">boom</span>
+        </div>
+        <div data-key="102" class="key">
+          <kbd>6</kbd>
+          <span class="sound">ride</span>
+        </div>
+        <div data-key="97" class="key">
+          <kbd>1</kbd>
+          <span class="sound">snare</span>
+        </div>
+        <div data-key="98" class="key">
+          <kbd>2</kbd>
+          <span class="sound">tom</span>
+        </div>
+        <div data-key="99" class="key">
+          <kbd>3</kbd>
+          <span class="sound">tink</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Piano sounds -->
+    <audio data-key="65" src="26-piano-keys/key01.mp3"></audio>
+    <audio data-key="66" src="26-piano-keys/key02.mp3"></audio>
+    <audio data-key="67" src="26-piano-keys/key03.mp3"></audio>
+    <audio data-key="68" src="26-piano-keys/key04.mp3"></audio>
+    <audio data-key="69" src="26-piano-keys/key05.mp3"></audio>
+    <audio data-key="70" src="26-piano-keys/key06.mp3"></audio>
+    <audio data-key="71" src="26-piano-keys/key07.mp3"></audio>
+    <audio data-key="72" src="26-piano-keys/key08.mp3"></audio>
+    <audio data-key="73" src="26-piano-keys/key09.mp3"></audio>
+    <audio data-key="74" src="26-piano-keys/key10.mp3"></audio>
+    <audio data-key="75" src="26-piano-keys/key11.mp3"></audio>
+    <audio data-key="76" src="26-piano-keys/key12.mp3"></audio>
+    <audio data-key="77" src="26-piano-keys/key13.mp3"></audio>
+    <audio data-key="78" src="26-piano-keys/key14.mp3"></audio>
+    <audio data-key="79" src="26-piano-keys/key15.mp3"></audio>
+    <audio data-key="80" src="26-piano-keys/key16.mp3"></audio>
+    <audio data-key="81" src="26-piano-keys/key17.mp3"></audio>
+    <audio data-key="82" src="26-piano-keys/key18.mp3"></audio>
+    <audio data-key="83" src="26-piano-keys/key19.mp3"></audio>
+    <audio data-key="84" src="26-piano-keys/key20.mp3"></audio>
+    <audio data-key="85" src="26-piano-keys/key21.mp3"></audio>
+    <audio data-key="86" src="26-piano-keys/key22.mp3"></audio>
+    <audio data-key="87" src="26-piano-keys/key23.mp3"></audio>
+    <audio data-key="88" src="26-piano-keys/key24.mp3"></audio>
+    <audio data-key="89" src="26-piano-keys/key25.wav"></audio>
+    <audio data-key="90" src="26-piano-keys/key26.mp3"></audio>
+
+    <!-- Drum sounds -->
+    <audio data-key="103" src="drum_sounds/clap.wav"></audio>
+    <audio data-key="104" src="drum_sounds/hihat.wav"></audio>
+    <audio data-key="105" src="drum_sounds/kick.wav"></audio>
+    <audio data-key="100" src="drum_sounds/openhat.wav"></audio>
+    <audio data-key="101" src="drum_sounds/boom.wav"></audio>
+    <audio data-key="102" src="drum_sounds/ride.wav"></audio>
+    <audio data-key="97" src="drum_sounds/snare.wav"></audio>
+    <audio data-key="98" src="drum_sounds/tom.wav"></audio>
+    <audio data-key="99" src="drum_sounds/tink.wav"></audio>
+    <script src="index.js"></script>
+  </body>
+</html>
